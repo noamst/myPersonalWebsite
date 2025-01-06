@@ -1,21 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function App() {
-  const frontPageHtml = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Front Page</title>
-    </head>
-    <body>
-        <h1>Front Page Content</h1>
-        <p>This is your static HTML content rendered inside React.</p>
-    </body>
-    </html>
-  `;
+  const [htmlContent, setHtmlContent] = useState('');
+
+  useEffect(() => {
+    axios
+      .get('/front_page.html')
+      .then((response) => setHtmlContent(response.data))
+      .catch((error) => console.error('Error loading HTML file:', error));
+  }, []);
 
   return (
-    <div dangerouslySetInnerHTML={{ __html: frontPageHtml }} />
+    <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
   );
 }
 
