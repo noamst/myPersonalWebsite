@@ -13,8 +13,7 @@ function Resume() {
                 <section className="resume-section">
                     <h2>About Me</h2>
                     <p>
-                    Junior software engineer looking for a full time position.I'm passionate about Programming, Data Science & Data Analysis and Machine
-                    Learning, and coming open minded to any technological challenge, looking to learn and make an impact
+                        CURRENTLY EMPTY
                     </p>
                 </section>
 
@@ -38,7 +37,7 @@ function Resume() {
                             <h3>Software Developer</h3>
                             <p>IDF</p>
                             <p>
-                                Developed in an Internal PLI derived language in an IBM Mainframe enviroment.I was implementing organizational policy and
+                            Developed in an Internal PLI derived language in an IBM Mainframe enviroment.I was implementing organizational policy and
                                 salary related issues in software
                             </p>
                         </li>
