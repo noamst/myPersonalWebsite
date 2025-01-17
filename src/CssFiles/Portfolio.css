@@ -1,0 +1,32 @@
+.portfolio {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.portfolio-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.portfolio-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.portfolio-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.portfolio-container::-webkit-scrollbar-thumb {
+    background: #61dafb;
+    border-radius: 10px;
+}
+
+.portfolio-container::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}

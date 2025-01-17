@@ -1,0 +1,74 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.resume {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.resume-header {
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.resume-header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #61dafb;
+}
+
+/* Section Styling */
+.resume-section {
+    margin: 20px 0;
+}
+
+.resume-section h2 {
+    font-size: 1.8em;
+    color: #282c34;
+    border-bottom: 2px solid #61dafb;
+    padding-bottom: 5px;
+}
+
+.resume-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-section ul li {
+    margin-bottom: 15px;
+}
+
+.resume-section ul li h3 {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.resume-section ul li p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Interests Section */
+.resume-section ul li::before {
+    content: "• ";
+    color: #61dafb;
+    font-weight: bold;
+}

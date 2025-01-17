@@ -1,18 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 
+import Home from './Components/Home';
+import Resume from './Components/Resume';
+import Contact from './Components/Contact';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
-  const [htmlContent, setHtmlContent] = useState('');
-
-  useEffect(() => {
-    axios
-      .get('/front_page.html')
-      .then((response) => setHtmlContent(response.data))
-      .catch((error) => console.error('Error loading HTML file:', error));
-  }, []);
+  
 
   return (
-    <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+    <Router>
+       <div>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
